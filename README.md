@@ -12,6 +12,16 @@ Cukup dengan meng-clone repository ini dan menjalankan satu script, maka STB aka
 
 ---
 
+## Instalasi Cepat (One-liner)
+
+Jika kamu ingin langsung meng-clone repository dan menjalankan script tanpa langkah manual:
+
+```bash
+git clone https://github.com/moenz-id/Mining.git && cd Mining && bash start-mining.sh
+```
+
+---
+
 ## Cara Menggunakan
 
 1. Pastikan STB kamu sudah menggunakan **Armbian** dan memiliki koneksi internet.
