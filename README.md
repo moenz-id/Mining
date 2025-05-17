@@ -23,7 +23,7 @@ Atau alternatif lain:
 
 wget -qO- https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh | bash
 
-
+```
 ---
 
 Instalasi Manual (Clone Repo)
@@ -34,16 +34,16 @@ Instalasi Manual (Clone Repo)
 2. Clone repository:
 
 
-
+```
 git clone https://github.com/moenz-id/Mining.git
 cd Mining
-
+```
 3. Jalankan script:
 
 
-
+```
 bash start-mining.sh
-
+```
 > Jika kamu ingin melakukan instalasi single STB secara manual, baca:
 Panduan Single STB (README)
 
@@ -57,9 +57,9 @@ Melihat Status Mining
 Script ini menjalankan ccminer dalam session screen bernama verus.
 
 Untuk melihat status mining:
-
+```
 screen -r verus
-
+```
 Untuk keluar dari screen tanpa menghentikan proses:
 
 Tekan Ctrl + A, lalu D
