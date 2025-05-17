@@ -14,65 +14,79 @@ Cukup dengan meng-clone repository ini dan menjalankan satu script, maka STB aka
 
 ## Instalasi Cepat (One-liner)
 
-Jika kamu ingin langsung meng-clone repository dan menjalankan script tanpa langkah manual:
+Jika kamu ingin langsung menjalankan script tanpa langkah manual:
 
 ```bash
-git clone https://github.com/moenz-id/Mining.git && cd Mining && bash start-mining.sh
-```
+bash <(curl -fsSL https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh)
+
+Atau alternatif lain:
+
+wget -qO- https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh | bash
+
 
 ---
 
-## Cara Menggunakan
+Instalasi Manual (Clone Repo)
 
-1. Pastikan STB kamu sudah menggunakan **Armbian** dan memiliki koneksi internet.
+1. Pastikan STB kamu sudah menggunakan Armbian dan memiliki koneksi internet.
+
 
 2. Clone repository:
 
-```bash
+
+
 git clone https://github.com/moenz-id/Mining.git
 cd Mining
-```
 
 3. Jalankan script:
 
-```bash
-bash start-mining.sh
-```
 
-4. Masukkan **alamat wallet Verus** dan **nama worker** saat diminta.
+
+bash start-mining.sh
+
+> Jika kamu ingin melakukan instalasi single STB secara manual, baca:
+Panduan Single STB (README)
+
+
+
 
 ---
 
-## Melihat Status Mining
+Melihat Status Mining
 
-Script ini menjalankan `ccminer` dalam session `screen` bernama `verus`.
+Script ini menjalankan ccminer dalam session screen bernama verus.
 
 Untuk melihat status mining:
 
-```bash
 screen -r verus
-```
 
 Untuk keluar dari screen tanpa menghentikan proses:
 
-- Tekan `Ctrl + A`, lalu `D`
+Tekan Ctrl + A, lalu D
+
+
 
 ---
 
-## Persyaratan
+Persyaratan
 
-- STB dengan Armbian (arm64)
-- Koneksi internet
-- Alamat wallet Verus Coin
+STB dengan Armbian (arm64)
 
----
+Koneksi internet
 
-## Catatan
+Alamat wallet Verus Coin
 
-Script ini tidak melakukan overclock atau modifikasi sistem. Hanya fokus pada instalasi `ccminer` dan menjalankan mining secara otomatis.
+
 
 ---
 
-## Credits
+Catatan
 
-- ccminer & library dari [rdsp87/dero-stb](https://github.com/rdsp87/dero-stb)
+Script ini tidak melakukan overclock atau modifikasi sistem. Hanya fokus pada instalasi ccminer dan menjalankan mining secara otomatis.
+
+
+---
+
+Credits
+
+ccminer & library dari rdsp87/dero-stb
