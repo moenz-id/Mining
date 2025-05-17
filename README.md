@@ -18,12 +18,12 @@ Jika kamu ingin langsung menjalankan script tanpa langkah manual:
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh)
-
-Atau alternatif lain:
-
-wget -qO- https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh | bash
-
 ```
+Atau alternatif lain:
+```
+wget -qO- https://raw.githubusercontent.com/moenz-id/Mining/main/single/start-mining.sh | bash
+```
+
 ---
 
 Instalasi Manual (Clone Repo)
